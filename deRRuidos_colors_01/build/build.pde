@@ -10,7 +10,7 @@ HDrawablePool pool, pool2, pool3, pool4;
 HColorPool colors, colors2, colors3;
 long seed;
 color bckCO = color(#264653);
-color bckCO2 = color(#e9c46a);
+color bckCO2 = color(155,0);
 color bckCO3 = color(#264653);
 
 void setup() {
@@ -24,7 +24,7 @@ void setup() {
 
 	colors3 = new HColorPool()
 		.add(#264653)
-		.add(#e9c46a)
+		.add(bckCO2,2)
 		.fillOnly()
 	;
 	pool3 = new HDrawablePool(15);
@@ -105,7 +105,7 @@ void setup() {
 						// .strokeCap(ROUND)
 						// .strokeWeight(1)
 						// .stroke(#FFFFFF)
-						.fill(#e9c46a)
+						.fill(#222222)
 						//.scale(random(0.5,1))
 						// .size(50)
 						.size(((int)random(2)*50)+100)
