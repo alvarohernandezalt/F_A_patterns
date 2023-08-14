@@ -9,9 +9,9 @@ boolean record = false;
 HDrawablePool pool, pool2, pool3, pool4;
 HColorPool colors, colors2, colors3;
 long seed;
-color bckCO = color(#EE7A01);
-color bckCO2 = color(155,0);
-color bckCO3 = color(#EE7A01);
+color bckCO = color(#264653);
+color bckCO2 = color(#e9c46a);
+color bckCO3 = color(#264653);
 
 void setup() {
 	size(1000, 600);
@@ -23,8 +23,8 @@ void setup() {
 
 
 	colors3 = new HColorPool()
-		.add(#EE7A01)
-		.add(bckCO2,2)
+		.add(#264653)
+		.add(#e9c46a)
 		.fillOnly()
 	;
 	pool3 = new HDrawablePool(15);
@@ -105,7 +105,7 @@ void setup() {
 						// .strokeCap(ROUND)
 						// .strokeWeight(1)
 						// .stroke(#FFFFFF)
-						.fill(#020202)
+						.fill(#e9c46a)
 						//.scale(random(0.5,1))
 						// .size(50)
 						.size(((int)random(2)*50)+100)
@@ -134,7 +134,7 @@ void draw() {
 	PGraphics tmp = null;
 
 	if (record) {
-		tmp = beginRecord(PDF, "/render/render-######.pdf");
+		tmp = beginRecord(PDF, "/render/fa01_pt_"+seed+".pdf");
 	}
 
 	if (tmp == null) {
