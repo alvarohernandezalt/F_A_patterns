@@ -29,14 +29,8 @@ void setup() {
 	;
 	pool3 = new HDrawablePool(15);
 	pool3.autoAddToStage()
-		.add(new HShape("MMrs05.svg"))
-		.add(new HShape("MMrs11.svg"))
-		.add(new HShape("MMrs18.svg"))
-		.add(new HShape("MMrs22.svg"))
-		.add(new HShape("MMrs25.svg"))
-		.add(new HShape("MMrs14.svg"))
-		.add(new HShape("MMrs15.svg"))
-
+		.add(new HShape("Logo_KALAM_sinLetra_SVG_RGB.svg"))
+		
 		.layout(
 			new HGridLayout()
 			.startX(100)
@@ -76,13 +70,8 @@ void setup() {
 	;
 	pool4 = new HDrawablePool(240);
 	pool4.autoAddToStage()
-		.add(new HShape("MMrs05.svg"))
-		.add(new HShape("MMrs11.svg"))
-		.add(new HShape("MMrs18.svg"))
-		.add(new HShape("MMrs22.svg"))
-		.add(new HShape("MMrs25.svg"))
-		.add(new HShape("MMrs14.svg"))
-		.add(new HShape("MMrs15.svg"))
+		.add(new HShape("Logo_KALAM_sinLetra_SVG_RGB.svg"))
+		
 
 		.layout(
 			new HGridLayout()
